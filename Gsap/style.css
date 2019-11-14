@@ -1,0 +1,99 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	background: black;
+	overflow: hidden;
+}
+header {
+	height: 100vh;
+	position: relative;
+	display: flex;
+}
+.cover {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	object-fit: cover;
+	object-position: top;
+}
+.cover-date {
+	position: absolute;
+	left: 10%;
+	bottom: 10%;
+	color: white;
+	opacity: .8;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav {
+	height: 20%;
+	width: 40%;
+	z-index: 2;
+	background: white;
+}
+.nav-closed {
+	height: 16%;
+	width: 40%;
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 1rem;
+}
+.nav-closed ul {
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	padding: .5rem;
+}
+.nav-open {
+	height: 84%;
+	width: 40%;
+	position: absolute;
+	top: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	opacity: 0;
+	pointer-events: none;
+}
+.clothing {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.clothing h2 {
+	font-size: 2rem;
+	padding: 1rem;
+}
+.clothing ul {
+	list-style: none;
+	padding: 1rem;
+}
+.clothing ul li {
+	padding-bottom: 10px;
+}
+.clothing ul li a {
+	text-decoration: none;
+	columns: lightgrey;
+}
+.nav-images {
+	width: 100%;
+	justify-content: space-around;
+	display: flex;
+}
+.nav-images img {
+	height: 10rem;
+}
